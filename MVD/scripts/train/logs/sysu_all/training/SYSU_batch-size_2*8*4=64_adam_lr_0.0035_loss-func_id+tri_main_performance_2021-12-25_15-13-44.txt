@@ -1,0 +1,885 @@
+Args: Namespace(MSmode='GRAPH_MODE', dataset='SYSU', data_path='/home/yuki/dataset/sysu/', data_url=None, batch_size=8, test_batch=64, num_pos=4, trial=1, img_w=144, img_h=288, arch='resnet50', z_dim=512, loss_func='id+tri', triloss=['OriTri', 'CenterTri'], drop=0.2, margin=0.3, lr=0.0035, optim='adam', warmup_steps=5, start_decay=15, end_decay=27, decay_factor=0.5, epoch=80, start_epoch=1, device_target='GPU', gpu='0', print_per_step=100, device_id=0, device_num=1, resume='', pretrain='/home/yuki/code/Mindspore/pretrain/resnet50.ckpt', run_distribute=False, parameter_server=False, save_period=10, tag='sysu_all', branch_name='main', sysu_mode='all', regdb_mode='v2i')
+Pretrain model: /home/yuki/code/Mindspore/pretrain/resnet50.ckpt
+==>2021-12-25_15-13-52
+==> Start Training...
+Epoch: [1][100/696]   Convolution LR: 0.0007000   IB & Classifier LR: 0.0000700    Loss:32.4662   id:18.8032   tri:13.6630   Batch Time:1.21  Accuracy:0.62   
+Epoch: [1][200/696]   Convolution LR: 0.0007000   IB & Classifier LR: 0.0000700    Loss:28.3656   id:16.2909   tri:12.0748   Batch Time:0.86  Accuracy:0.99   
+Epoch: [1][300/696]   Convolution LR: 0.0007000   IB & Classifier LR: 0.0000700    Loss:26.7658   id:16.2106   tri:10.5552   Batch Time:0.75  Accuracy:1.55   
+Epoch: [1][400/696]   Convolution LR: 0.0007000   IB & Classifier LR: 0.0000700    Loss:27.7744   id:16.7825   tri:10.9919   Batch Time:0.69  Accuracy:2.20   
+Epoch: [1][500/696]   Convolution LR: 0.0007000   IB & Classifier LR: 0.0000700    Loss:24.3246   id:15.2230   tri:9.1016   Batch Time:0.66  Accuracy:3.03   
+Epoch: [1][600/696]   Convolution LR: 0.0007000   IB & Classifier LR: 0.0000700    Loss:24.1721   id:15.0304   tri:9.1417   Batch Time:0.63  Accuracy:3.88   
+Original Observation:   Rank-1: 13.75% | Rank-5: 35.17% | Rank-10: 50.12%|                 Rank-20: 67.14%| mAP: 14.28%
+rank-1: 13.75%, mAP: 14.28%
+******************************************************************************
+==>2021-12-25_15-21-28
+==> Start Training...
+Epoch: [2][100/696]   Convolution LR: 0.0014000   IB & Classifier LR: 0.0001400    Loss:25.8031   id:15.8766   tri:9.9265   Batch Time:0.51  Accuracy:10.08   
+Epoch: [2][200/696]   Convolution LR: 0.0014000   IB & Classifier LR: 0.0001400    Loss:18.5386   id:12.7370   tri:5.8016   Batch Time:0.51  Accuracy:11.09   
+Epoch: [2][300/696]   Convolution LR: 0.0014000   IB & Classifier LR: 0.0001400    Loss:18.2157   id:12.0113   tri:6.2044   Batch Time:0.51  Accuracy:12.66   
+Epoch: [2][400/696]   Convolution LR: 0.0014000   IB & Classifier LR: 0.0001400    Loss:22.3540   id:13.3347   tri:9.0193   Batch Time:0.51  Accuracy:14.05   
+Epoch: [2][500/696]   Convolution LR: 0.0014000   IB & Classifier LR: 0.0001400    Loss:18.5259   id:12.0136   tri:6.5123   Batch Time:0.51  Accuracy:15.92   
+Epoch: [2][600/696]   Convolution LR: 0.0014000   IB & Classifier LR: 0.0001400    Loss:18.4841   id:11.7707   tri:6.7134   Batch Time:0.51  Accuracy:17.72   
+Original Observation:   Rank-1: 29.24% | Rank-5: 60.30% | Rank-10: 74.61%|                 Rank-20: 88.13%| mAP: 29.07%
+rank-1: 29.24%, mAP: 29.07%
+******************************************************************************
+==>2021-12-25_15-27-38
+==> Start Training...
+Epoch: [3][100/696]   Convolution LR: 0.0021000   IB & Classifier LR: 0.0002100    Loss:16.1810   id:9.7996   tri:6.3814   Batch Time:0.51  Accuracy:28.83   
+Epoch: [3][200/696]   Convolution LR: 0.0021000   IB & Classifier LR: 0.0002100    Loss:16.0542   id:9.9848   tri:6.0694   Batch Time:0.51  Accuracy:29.39   
+Epoch: [3][300/696]   Convolution LR: 0.0021000   IB & Classifier LR: 0.0002100    Loss:14.6606   id:10.8374   tri:3.8232   Batch Time:0.51  Accuracy:30.55   
+Epoch: [3][400/696]   Convolution LR: 0.0021000   IB & Classifier LR: 0.0002100    Loss:12.7925   id:8.7800   tri:4.0125   Batch Time:0.51  Accuracy:31.74   
+Epoch: [3][500/696]   Convolution LR: 0.0021000   IB & Classifier LR: 0.0002100    Loss:11.1988   id:7.7579   tri:3.4409   Batch Time:0.51  Accuracy:33.11   
+Epoch: [3][600/696]   Convolution LR: 0.0021000   IB & Classifier LR: 0.0002100    Loss:11.5340   id:7.1827   tri:4.3513   Batch Time:0.51  Accuracy:34.34   
+Original Observation:   Rank-1: 39.68% | Rank-5: 72.34% | Rank-10: 84.12%|                 Rank-20: 92.77%| mAP: 38.07%
+rank-1: 39.68%, mAP: 38.07%
+******************************************************************************
+==>2021-12-25_15-33-47
+==> Start Training...
+Epoch: [4][100/696]   Convolution LR: 0.0028000   IB & Classifier LR: 0.0002800    Loss:11.3487   id:7.5823   tri:3.7664   Batch Time:0.51  Accuracy:42.18   
+Epoch: [4][200/696]   Convolution LR: 0.0028000   IB & Classifier LR: 0.0002800    Loss:13.5300   id:7.9716   tri:5.5585   Batch Time:0.51  Accuracy:41.88   
+Epoch: [4][300/696]   Convolution LR: 0.0028000   IB & Classifier LR: 0.0002800    Loss:8.7481   id:6.0697   tri:2.6783   Batch Time:0.51  Accuracy:42.41   
+Epoch: [4][400/696]   Convolution LR: 0.0028000   IB & Classifier LR: 0.0002800    Loss:8.2864   id:6.0572   tri:2.2292   Batch Time:0.51  Accuracy:42.95   
+Epoch: [4][500/696]   Convolution LR: 0.0028000   IB & Classifier LR: 0.0002800    Loss:9.6710   id:6.4937   tri:3.1773   Batch Time:0.51  Accuracy:43.73   
+Epoch: [4][600/696]   Convolution LR: 0.0028000   IB & Classifier LR: 0.0002800    Loss:9.6920   id:6.8130   tri:2.8790   Batch Time:0.51  Accuracy:44.29   
+Original Observation:   Rank-1: 40.76% | Rank-5: 72.86% | Rank-10: 84.31%|                 Rank-20: 93.63%| mAP: 39.58%
+rank-1: 40.76%, mAP: 39.58%
+******************************************************************************
+==>2021-12-25_15-39-57
+==> Start Training...
+Epoch: [5][100/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:10.4270   id:6.3377   tri:4.0893   Batch Time:0.51  Accuracy:47.65   
+Epoch: [5][200/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:7.2372   id:5.4947   tri:1.7426   Batch Time:0.51  Accuracy:47.56   
+Epoch: [5][300/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:11.8899   id:7.6779   tri:4.2120   Batch Time:0.51  Accuracy:48.15   
+Epoch: [5][400/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:7.9923   id:5.5749   tri:2.4174   Batch Time:0.51  Accuracy:48.44   
+Epoch: [5][500/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.5824   id:4.6468   tri:0.9356   Batch Time:0.51  Accuracy:49.19   
+Epoch: [5][600/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:9.4344   id:6.5540   tri:2.8804   Batch Time:0.51  Accuracy:49.80   
+Original Observation:   Rank-1: 42.28% | Rank-5: 75.25% | Rank-10: 87.26%|                 Rank-20: 95.32%| mAP: 42.19%
+rank-1: 42.28%, mAP: 42.19%
+******************************************************************************
+==>2021-12-25_15-46-07
+==> Start Training...
+Epoch: [6][100/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:11.0263   id:7.2583   tri:3.7680   Batch Time:0.51  Accuracy:52.25   
+Epoch: [6][200/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:8.6403   id:5.5908   tri:3.0495   Batch Time:0.51  Accuracy:52.37   
+Epoch: [6][300/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:8.0315   id:5.3698   tri:2.6617   Batch Time:0.51  Accuracy:52.74   
+Epoch: [6][400/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:7.1585   id:4.5976   tri:2.5609   Batch Time:0.51  Accuracy:53.09   
+Epoch: [6][500/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:7.6513   id:4.7726   tri:2.8787   Batch Time:0.51  Accuracy:53.53   
+Epoch: [6][600/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:8.8262   id:6.0343   tri:2.7919   Batch Time:0.51  Accuracy:54.03   
+Original Observation:   Rank-1: 46.19% | Rank-5: 77.53% | Rank-10: 89.05%|                 Rank-20: 95.82%| mAP: 46.41%
+rank-1: 46.19%, mAP: 46.41%
+******************************************************************************
+==>2021-12-25_15-52-17
+==> Start Training...
+Epoch: [7][100/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:9.9556   id:5.7637   tri:4.1919   Batch Time:0.51  Accuracy:56.91   
+Epoch: [7][200/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.7699   id:5.3891   tri:1.3808   Batch Time:0.51  Accuracy:57.07   
+Epoch: [7][300/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:7.3383   id:5.1162   tri:2.2222   Batch Time:0.51  Accuracy:57.50   
+Epoch: [7][400/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:4.4955   id:3.9161   tri:0.5794   Batch Time:0.51  Accuracy:57.99   
+Epoch: [7][500/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:8.2008   id:5.8340   tri:2.3668   Batch Time:0.51  Accuracy:58.05   
+Epoch: [7][600/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.4800   id:5.2655   tri:1.2145   Batch Time:0.51  Accuracy:58.34   
+Original Observation:   Rank-1: 47.97% | Rank-5: 79.77% | Rank-10: 89.47%|                 Rank-20: 95.93%| mAP: 47.94%
+rank-1: 47.97%, mAP: 47.94%
+******************************************************************************
+==>2021-12-25_15-58-27
+==> Start Training...
+Epoch: [8][100/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.9390   id:5.7920   tri:1.1470   Batch Time:0.51  Accuracy:61.61   
+Epoch: [8][200/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:8.1374   id:5.3351   tri:2.8023   Batch Time:0.51  Accuracy:61.20   
+Epoch: [8][300/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.8172   id:4.5477   tri:1.2695   Batch Time:0.51  Accuracy:61.18   
+Epoch: [8][400/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:7.2082   id:4.8951   tri:2.3132   Batch Time:0.51  Accuracy:61.20   
+Epoch: [8][500/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.9253   id:5.1214   tri:0.8040   Batch Time:0.51  Accuracy:61.35   
+Epoch: [8][600/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.6651   id:4.7771   tri:1.8881   Batch Time:0.51  Accuracy:61.47   
+Original Observation:   Rank-1: 47.61% | Rank-5: 79.28% | Rank-10: 90.03%|                 Rank-20: 96.54%| mAP: 47.83%
+rank-1: 47.61%, mAP: 47.83%
+******************************************************************************
+==>2021-12-25_16-04-36
+==> Start Training...
+Epoch: [9][100/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.5801   id:4.3073   tri:1.2728   Batch Time:0.51  Accuracy:62.85   
+Epoch: [9][200/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:4.4470   id:3.4332   tri:1.0139   Batch Time:0.51  Accuracy:63.04   
+Epoch: [9][300/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:3.9617   id:3.4858   tri:0.4758   Batch Time:0.51  Accuracy:63.43   
+Epoch: [9][400/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:7.2733   id:5.5014   tri:1.7719   Batch Time:0.51  Accuracy:63.74   
+Epoch: [9][500/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:4.2935   id:3.7157   tri:0.5778   Batch Time:0.51  Accuracy:63.90   
+Epoch: [9][600/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.8446   id:5.6294   tri:1.2153   Batch Time:0.51  Accuracy:63.92   
+Original Observation:   Rank-1: 49.92% | Rank-5: 82.06% | Rank-10: 90.53%|                 Rank-20: 96.87%| mAP: 49.54%
+rank-1: 49.92%, mAP: 49.54%
+******************************************************************************
+==>2021-12-25_16-10-46
+==> Start Training...
+Epoch: [10][100/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.1963   id:4.9533   tri:1.2430   Batch Time:0.51  Accuracy:63.67   
+Epoch: [10][200/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.5417   id:4.8026   tri:1.7391   Batch Time:0.51  Accuracy:64.19   
+Epoch: [10][300/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:3.4905   id:3.2665   tri:0.2240   Batch Time:0.51  Accuracy:64.56   
+Epoch: [10][400/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.2298   id:3.9640   tri:1.2658   Batch Time:0.51  Accuracy:64.85   
+Epoch: [10][500/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.8380   id:4.8675   tri:0.9705   Batch Time:0.51  Accuracy:65.01   
+Epoch: [10][600/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.2562   id:4.5617   tri:1.6945   Batch Time:0.51  Accuracy:65.19   
+Original Observation:   Rank-1: 50.13% | Rank-5: 81.64% | Rank-10: 89.76%|                 Rank-20: 95.48%| mAP: 49.59%
+rank-1: 50.13%, mAP: 49.59%
+******************************************************************************
+==>2021-12-25_16-16-54
+==> Start Training...
+Epoch: [11][100/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.9365   id:4.4554   tri:1.4811   Batch Time:0.51  Accuracy:65.68   
+Epoch: [11][200/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:4.6662   id:4.0322   tri:0.6340   Batch Time:0.51  Accuracy:65.73   
+Epoch: [11][300/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:7.4402   id:6.0536   tri:1.3866   Batch Time:0.51  Accuracy:65.92   
+Epoch: [11][400/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:3.8721   id:3.2708   tri:0.6013   Batch Time:0.51  Accuracy:65.83   
+Epoch: [11][500/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:4.3132   id:3.7598   tri:0.5533   Batch Time:0.51  Accuracy:65.94   
+Epoch: [11][600/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.7534   id:4.7578   tri:1.9956   Batch Time:0.51  Accuracy:66.16   
+Original Observation:   Rank-1: 51.30% | Rank-5: 81.70% | Rank-10: 89.38%|                 Rank-20: 95.32%| mAP: 50.75%
+rank-1: 51.30%, mAP: 50.75%
+******************************************************************************
+==>2021-12-25_16-23-01
+==> Start Training...
+Epoch: [12][100/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.1106   id:4.9055   tri:1.2051   Batch Time:0.51  Accuracy:68.41   
+Epoch: [12][200/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.2064   id:4.0089   tri:2.1974   Batch Time:0.51  Accuracy:68.22   
+Epoch: [12][300/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:3.2012   id:3.0570   tri:0.1442   Batch Time:0.51  Accuracy:68.34   
+Epoch: [12][400/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.0706   id:3.6542   tri:1.4164   Batch Time:0.51  Accuracy:68.58   
+Epoch: [12][500/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.3011   id:4.9220   tri:0.3791   Batch Time:0.51  Accuracy:68.70   
+Epoch: [12][600/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:6.7230   id:4.1669   tri:2.5561   Batch Time:0.51  Accuracy:68.80   
+Original Observation:   Rank-1: 51.58% | Rank-5: 81.40% | Rank-10: 90.25%|                 Rank-20: 95.96%| mAP: 51.13%
+rank-1: 51.58%, mAP: 51.13%
+******************************************************************************
+==>2021-12-25_16-29-09
+==> Start Training...
+Epoch: [13][100/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:4.3873   id:3.4438   tri:0.9435   Batch Time:0.51  Accuracy:67.99   
+Epoch: [13][200/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.1438   id:4.2532   tri:0.8907   Batch Time:0.51  Accuracy:68.09   
+Epoch: [13][300/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:3.7450   id:3.2107   tri:0.5342   Batch Time:0.51  Accuracy:68.72   
+Epoch: [13][400/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:3.6913   id:2.8656   tri:0.8257   Batch Time:0.51  Accuracy:68.86   
+Epoch: [13][500/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.4995   id:4.5019   tri:0.9976   Batch Time:0.51  Accuracy:68.76   
+Epoch: [13][600/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:2.9897   id:2.4813   tri:0.5084   Batch Time:0.51  Accuracy:68.97   
+Original Observation:   Rank-1: 52.05% | Rank-5: 81.33% | Rank-10: 89.54%|                 Rank-20: 95.67%| mAP: 49.93%
+rank-1: 52.05%, mAP: 49.93%
+******************************************************************************
+==>2021-12-25_16-35-16
+==> Start Training...
+Epoch: [14][100/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:4.3430   id:3.6362   tri:0.7068   Batch Time:0.51  Accuracy:69.13   
+Epoch: [14][200/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:2.4806   id:2.3562   tri:0.1244   Batch Time:0.51  Accuracy:69.62   
+Epoch: [14][300/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:3.9580   id:3.2365   tri:0.7215   Batch Time:0.51  Accuracy:69.79   
+Epoch: [14][400/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:5.6522   id:4.4009   tri:1.2513   Batch Time:0.51  Accuracy:70.00   
+Epoch: [14][500/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:4.4843   id:3.9716   tri:0.5127   Batch Time:0.51  Accuracy:70.08   
+Epoch: [14][600/696]   Convolution LR: 0.0035000   IB & Classifier LR: 0.0003500    Loss:4.6382   id:3.6054   tri:1.0328   Batch Time:0.51  Accuracy:70.31   
+Original Observation:   Rank-1: 52.25% | Rank-5: 82.96% | Rank-10: 90.96%|                 Rank-20: 97.01%| mAP: 51.06%
+rank-1: 52.25%, mAP: 51.06%
+******************************************************************************
+==>2021-12-25_16-41-24
+==> Start Training...
+Epoch: [15][100/696]   Convolution LR: 0.0003500   IB & Classifier LR: 0.0000350    Loss:1.8529   id:1.7971   tri:0.0558   Batch Time:0.51  Accuracy:74.65   
+Epoch: [15][200/696]   Convolution LR: 0.0003500   IB & Classifier LR: 0.0000350    Loss:3.1484   id:2.9315   tri:0.2169   Batch Time:0.51  Accuracy:77.07   
+Epoch: [15][300/696]   Convolution LR: 0.0003500   IB & Classifier LR: 0.0000350    Loss:3.7410   id:2.9313   tri:0.8097   Batch Time:0.51  Accuracy:78.83   
+Epoch: [15][400/696]   Convolution LR: 0.0003500   IB & Classifier LR: 0.0000350    Loss:1.9183   id:1.8666   tri:0.0517   Batch Time:0.51  Accuracy:80.09   
+Epoch: [15][500/696]   Convolution LR: 0.0003500   IB & Classifier LR: 0.0000350    Loss:2.6800   id:2.5069   tri:0.1731   Batch Time:0.51  Accuracy:80.75   
+Epoch: [15][600/696]   Convolution LR: 0.0003500   IB & Classifier LR: 0.0000350    Loss:1.5174   id:1.2474   tri:0.2701   Batch Time:0.51  Accuracy:81.33   
+Original Observation:   Rank-1: 59.50% | Rank-5: 85.62% | Rank-10: 93.31%|                 Rank-20: 98.15%| mAP: 57.52%
+rank-1: 59.50%, mAP: 57.52%
+******************************************************************************
+==>2021-12-25_16-47-32
+==> Start Training...
+Epoch: [16][100/696]   Convolution LR: 0.0000350   IB & Classifier LR: 0.0000035    Loss:1.2338   id:1.2146   tri:0.0192   Batch Time:0.51  Accuracy:85.03   
+Epoch: [16][200/696]   Convolution LR: 0.0000350   IB & Classifier LR: 0.0000035    Loss:1.2881   id:1.2558   tri:0.0323   Batch Time:0.51  Accuracy:85.67   
+Epoch: [16][300/696]   Convolution LR: 0.0000350   IB & Classifier LR: 0.0000035    Loss:1.4287   id:1.3604   tri:0.0683   Batch Time:0.51  Accuracy:85.81   
+Epoch: [16][400/696]   Convolution LR: 0.0000350   IB & Classifier LR: 0.0000035    Loss:1.8114   id:1.6479   tri:0.1635   Batch Time:0.51  Accuracy:86.04   
+Epoch: [16][500/696]   Convolution LR: 0.0000350   IB & Classifier LR: 0.0000035    Loss:1.8609   id:1.5783   tri:0.2826   Batch Time:0.51  Accuracy:86.18   
+Epoch: [16][600/696]   Convolution LR: 0.0000350   IB & Classifier LR: 0.0000035    Loss:1.9016   id:1.6282   tri:0.2733   Batch Time:0.51  Accuracy:86.28   
+Original Observation:   Rank-1: 60.18% | Rank-5: 86.19% | Rank-10: 93.36%|                 Rank-20: 97.91%| mAP: 57.66%
+rank-1: 60.18%, mAP: 57.66%
+******************************************************************************
+==>2021-12-25_16-53-39
+==> Start Training...
+Epoch: [17][100/696]   Convolution LR: 0.0000035   IB & Classifier LR: 0.0000003    Loss:3.2292   id:2.2514   tri:0.9778   Batch Time:0.51  Accuracy:86.68   
+Epoch: [17][200/696]   Convolution LR: 0.0000035   IB & Classifier LR: 0.0000003    Loss:2.2481   id:2.0535   tri:0.1946   Batch Time:0.51  Accuracy:86.99   
+Epoch: [17][300/696]   Convolution LR: 0.0000035   IB & Classifier LR: 0.0000003    Loss:1.7820   id:1.6235   tri:0.1585   Batch Time:0.51  Accuracy:87.08   
+Epoch: [17][400/696]   Convolution LR: 0.0000035   IB & Classifier LR: 0.0000003    Loss:1.5048   id:1.3766   tri:0.1282   Batch Time:0.51  Accuracy:86.82   
+Epoch: [17][500/696]   Convolution LR: 0.0000035   IB & Classifier LR: 0.0000003    Loss:1.1592   id:1.1412   tri:0.0180   Batch Time:0.51  Accuracy:86.71   
+Epoch: [17][600/696]   Convolution LR: 0.0000035   IB & Classifier LR: 0.0000003    Loss:1.5140   id:1.2500   tri:0.2640   Batch Time:0.51  Accuracy:86.61   
+Original Observation:   Rank-1: 58.85% | Rank-5: 86.49% | Rank-10: 93.36%|                 Rank-20: 97.87%| mAP: 57.58%
+rank-1: 58.85%, mAP: 57.58%
+******************************************************************************
+==>2021-12-25_16-59-47
+==> Start Training...
+Epoch: [18][100/696]   Convolution LR: 0.0000003   IB & Classifier LR: 0.0000000    Loss:1.5202   id:1.4991   tri:0.0211   Batch Time:0.51  Accuracy:85.91   
+Epoch: [18][200/696]   Convolution LR: 0.0000003   IB & Classifier LR: 0.0000000    Loss:1.9982   id:1.8318   tri:0.1663   Batch Time:0.51  Accuracy:86.49   
+Epoch: [18][300/696]   Convolution LR: 0.0000003   IB & Classifier LR: 0.0000000    Loss:1.9525   id:1.7773   tri:0.1752   Batch Time:0.51  Accuracy:86.58   
+Epoch: [18][400/696]   Convolution LR: 0.0000003   IB & Classifier LR: 0.0000000    Loss:1.9547   id:1.8256   tri:0.1291   Batch Time:0.51  Accuracy:86.53   
+Epoch: [18][500/696]   Convolution LR: 0.0000003   IB & Classifier LR: 0.0000000    Loss:1.9729   id:1.8530   tri:0.1199   Batch Time:0.51  Accuracy:86.57   
+Epoch: [18][600/696]   Convolution LR: 0.0000003   IB & Classifier LR: 0.0000000    Loss:1.4138   id:1.3686   tri:0.0452   Batch Time:0.51  Accuracy:86.60   
+Original Observation:   Rank-1: 58.67% | Rank-5: 85.46% | Rank-10: 91.75%|                 Rank-20: 96.99%| mAP: 57.14%
+rank-1: 58.67%, mAP: 57.14%
+******************************************************************************
+==>2021-12-25_17-05-55
+==> Start Training...
+Epoch: [19][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.0554   id:2.6224   tri:0.4331   Batch Time:0.51  Accuracy:86.83   
+Epoch: [19][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5597   id:1.4848   tri:0.0749   Batch Time:0.51  Accuracy:86.56   
+Epoch: [19][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5658   id:1.2451   tri:0.3207   Batch Time:0.51  Accuracy:86.55   
+Epoch: [19][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5296   id:2.2413   tri:0.2883   Batch Time:0.51  Accuracy:86.58   
+Epoch: [19][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7652   id:1.5450   tri:0.2202   Batch Time:0.51  Accuracy:86.65   
+Epoch: [19][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6184   id:1.5488   tri:0.0697   Batch Time:0.51  Accuracy:86.59   
+Original Observation:   Rank-1: 58.17% | Rank-5: 84.89% | Rank-10: 91.91%|                 Rank-20: 97.07%| mAP: 56.82%
+rank-1: 58.17%, mAP: 56.82%
+******************************************************************************
+==>2021-12-25_17-12-02
+==> Start Training...
+Epoch: [20][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7622   id:1.6344   tri:0.1278   Batch Time:0.51  Accuracy:87.45   
+Epoch: [20][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0349   id:1.9482   tri:0.0867   Batch Time:0.51  Accuracy:87.20   
+Epoch: [20][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9036   id:1.6732   tri:0.2304   Batch Time:0.51  Accuracy:86.65   
+Epoch: [20][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1867   id:1.9906   tri:0.1962   Batch Time:0.51  Accuracy:86.49   
+Epoch: [20][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.9550   id:1.9959   tri:0.9591   Batch Time:0.51  Accuracy:86.65   
+Epoch: [20][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0823   id:1.9195   tri:0.1628   Batch Time:0.51  Accuracy:86.73   
+Original Observation:   Rank-1: 58.31% | Rank-5: 85.16% | Rank-10: 92.54%|                 Rank-20: 97.74%| mAP: 56.71%
+rank-1: 58.31%, mAP: 56.71%
+******************************************************************************
+==>2021-12-25_17-18-10
+==> Start Training...
+Epoch: [21][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1348   id:2.0060   tri:0.1288   Batch Time:0.51  Accuracy:87.04   
+Epoch: [21][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5284   id:1.3776   tri:0.1508   Batch Time:0.51  Accuracy:87.32   
+Epoch: [21][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8732   id:1.5675   tri:0.3057   Batch Time:0.51  Accuracy:87.14   
+Epoch: [21][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6944   id:1.3380   tri:0.3564   Batch Time:0.51  Accuracy:87.05   
+Epoch: [21][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9005   id:1.8115   tri:0.0890   Batch Time:0.51  Accuracy:86.95   
+Epoch: [21][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4647   id:1.4421   tri:0.0226   Batch Time:0.51  Accuracy:86.88   
+Original Observation:   Rank-1: 58.71% | Rank-5: 86.28% | Rank-10: 92.86%|                 Rank-20: 97.38%| mAP: 57.73%
+rank-1: 58.71%, mAP: 57.73%
+******************************************************************************
+==>2021-12-25_17-24-18
+==> Start Training...
+Epoch: [22][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6440   id:1.4808   tri:0.1632   Batch Time:0.51  Accuracy:87.66   
+Epoch: [22][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5588   id:2.2332   tri:0.3256   Batch Time:0.51  Accuracy:87.11   
+Epoch: [22][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0771   id:1.8011   tri:0.2760   Batch Time:0.51  Accuracy:86.97   
+Epoch: [22][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8372   id:1.7130   tri:0.1242   Batch Time:0.51  Accuracy:86.94   
+Epoch: [22][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0902   id:1.9845   tri:0.1058   Batch Time:0.51  Accuracy:86.97   
+Epoch: [22][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0577   id:1.9254   tri:0.1322   Batch Time:0.51  Accuracy:86.86   
+Original Observation:   Rank-1: 59.03% | Rank-5: 86.00% | Rank-10: 93.12%|                 Rank-20: 97.90%| mAP: 57.39%
+rank-1: 59.03%, mAP: 57.39%
+******************************************************************************
+==>2021-12-25_17-30-25
+==> Start Training...
+Epoch: [23][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4111   id:2.1069   tri:0.3042   Batch Time:0.51  Accuracy:87.31   
+Epoch: [23][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4374   id:1.3843   tri:0.0531   Batch Time:0.51  Accuracy:87.02   
+Epoch: [23][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2853   id:1.2303   tri:0.0549   Batch Time:0.51  Accuracy:86.64   
+Epoch: [23][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3677   id:1.2809   tri:0.0868   Batch Time:0.51  Accuracy:86.75   
+Epoch: [23][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7025   id:1.6678   tri:0.0347   Batch Time:0.51  Accuracy:86.78   
+Epoch: [23][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.7301   id:2.3765   tri:0.3537   Batch Time:0.51  Accuracy:86.68   
+Original Observation:   Rank-1: 59.17% | Rank-5: 85.51% | Rank-10: 92.65%|                 Rank-20: 97.59%| mAP: 57.62%
+rank-1: 59.17%, mAP: 57.62%
+******************************************************************************
+==>2021-12-25_17-36-33
+==> Start Training...
+Epoch: [24][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5915   id:2.2390   tri:0.3525   Batch Time:0.51  Accuracy:87.16   
+Epoch: [24][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8367   id:1.6854   tri:0.1514   Batch Time:0.51  Accuracy:87.28   
+Epoch: [24][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4719   id:1.3204   tri:0.1515   Batch Time:0.51  Accuracy:87.01   
+Epoch: [24][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1390   id:1.9459   tri:0.1930   Batch Time:0.51  Accuracy:86.82   
+Epoch: [24][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.1250   id:1.1120   tri:0.0130   Batch Time:0.51  Accuracy:86.79   
+Epoch: [24][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0468   id:1.6875   tri:0.3593   Batch Time:0.51  Accuracy:86.75   
+Original Observation:   Rank-1: 59.45% | Rank-5: 86.39% | Rank-10: 93.10%|                 Rank-20: 97.86%| mAP: 57.80%
+rank-1: 59.45%, mAP: 57.80%
+******************************************************************************
+==>2021-12-25_17-42-41
+==> Start Training...
+Epoch: [25][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8444   id:1.5870   tri:0.2575   Batch Time:0.51  Accuracy:87.29   
+Epoch: [25][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3759   id:1.9003   tri:0.4756   Batch Time:0.51  Accuracy:87.06   
+Epoch: [25][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0948   id:1.8857   tri:0.2091   Batch Time:0.51  Accuracy:86.95   
+Epoch: [25][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2762   id:2.0888   tri:0.1873   Batch Time:0.51  Accuracy:86.95   
+Epoch: [25][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6264   id:2.1015   tri:0.5250   Batch Time:0.51  Accuracy:87.01   
+Epoch: [25][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5562   id:1.3832   tri:0.1731   Batch Time:0.51  Accuracy:86.94   
+Original Observation:   Rank-1: 58.88% | Rank-5: 85.12% | Rank-10: 92.28%|                 Rank-20: 97.03%| mAP: 57.27%
+rank-1: 58.88%, mAP: 57.27%
+******************************************************************************
+==>2021-12-25_17-48-49
+==> Start Training...
+Epoch: [26][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5645   id:1.5042   tri:0.0603   Batch Time:0.51  Accuracy:87.49   
+Epoch: [26][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2997   id:2.0125   tri:0.2872   Batch Time:0.51  Accuracy:87.59   
+Epoch: [26][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5387   id:2.4082   tri:0.1305   Batch Time:0.51  Accuracy:87.18   
+Epoch: [26][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8110   id:1.6967   tri:0.1143   Batch Time:0.51  Accuracy:87.11   
+Epoch: [26][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1792   id:1.9770   tri:0.2023   Batch Time:0.51  Accuracy:86.94   
+Epoch: [26][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8695   id:1.4965   tri:0.3730   Batch Time:0.51  Accuracy:86.86   
+Original Observation:   Rank-1: 58.51% | Rank-5: 85.73% | Rank-10: 92.97%|                 Rank-20: 97.78%| mAP: 57.07%
+rank-1: 58.51%, mAP: 57.07%
+******************************************************************************
+==>2021-12-25_17-54-56
+==> Start Training...
+Epoch: [27][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2908   id:1.1444   tri:0.1464   Batch Time:0.51  Accuracy:87.03   
+Epoch: [27][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4243   id:1.2430   tri:0.1814   Batch Time:0.51  Accuracy:87.36   
+Epoch: [27][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9162   id:1.8136   tri:0.1026   Batch Time:0.51  Accuracy:87.02   
+Epoch: [27][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6911   id:2.4627   tri:0.2285   Batch Time:0.51  Accuracy:87.10   
+Epoch: [27][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6262   id:1.5380   tri:0.0882   Batch Time:0.51  Accuracy:87.02   
+Epoch: [27][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8112   id:1.7682   tri:0.0429   Batch Time:0.51  Accuracy:86.84   
+Original Observation:   Rank-1: 59.75% | Rank-5: 86.73% | Rank-10: 93.38%|                 Rank-20: 97.54%| mAP: 58.19%
+rank-1: 59.75%, mAP: 58.19%
+******************************************************************************
+==>2021-12-25_18-01-04
+==> Start Training...
+Epoch: [28][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4301   id:2.1930   tri:0.2372   Batch Time:0.51  Accuracy:87.33   
+Epoch: [28][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3195   id:2.1750   tri:0.1445   Batch Time:0.51  Accuracy:87.22   
+Epoch: [28][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8157   id:1.7109   tri:0.1048   Batch Time:0.51  Accuracy:86.94   
+Epoch: [28][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.1040   id:1.0922   tri:0.0118   Batch Time:0.51  Accuracy:86.83   
+Epoch: [28][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8002   id:1.6615   tri:0.1387   Batch Time:0.51  Accuracy:86.67   
+Epoch: [28][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3543   id:2.0259   tri:0.3284   Batch Time:0.51  Accuracy:86.77   
+Original Observation:   Rank-1: 59.34% | Rank-5: 86.58% | Rank-10: 93.67%|                 Rank-20: 97.91%| mAP: 57.45%
+rank-1: 59.34%, mAP: 57.45%
+******************************************************************************
+==>2021-12-25_18-07-12
+==> Start Training...
+Epoch: [29][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3314   id:2.0699   tri:0.2615   Batch Time:0.51  Accuracy:86.47   
+Epoch: [29][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5384   id:1.5086   tri:0.0298   Batch Time:0.51  Accuracy:86.35   
+Epoch: [29][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9306   id:1.8288   tri:0.1018   Batch Time:0.51  Accuracy:86.38   
+Epoch: [29][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9982   id:1.8151   tri:0.1831   Batch Time:0.51  Accuracy:86.55   
+Epoch: [29][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8004   id:1.6545   tri:0.1459   Batch Time:0.51  Accuracy:86.62   
+Epoch: [29][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4545   id:2.2160   tri:0.2384   Batch Time:0.51  Accuracy:86.57   
+Original Observation:   Rank-1: 59.03% | Rank-5: 85.67% | Rank-10: 92.23%|                 Rank-20: 97.35%| mAP: 57.52%
+rank-1: 59.03%, mAP: 57.52%
+******************************************************************************
+==>2021-12-25_18-13-20
+==> Start Training...
+Epoch: [30][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2604   id:1.2428   tri:0.0175   Batch Time:0.51  Accuracy:86.26   
+Epoch: [30][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7990   id:1.6395   tri:0.1594   Batch Time:0.51  Accuracy:86.06   
+Epoch: [30][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7932   id:1.7347   tri:0.0584   Batch Time:0.51  Accuracy:86.31   
+Epoch: [30][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2466   id:2.0993   tri:0.1474   Batch Time:0.51  Accuracy:86.37   
+Epoch: [30][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1014   id:1.9681   tri:0.1333   Batch Time:0.51  Accuracy:86.33   
+Epoch: [30][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6265   id:2.4762   tri:0.1503   Batch Time:0.51  Accuracy:86.27   
+Original Observation:   Rank-1: 58.69% | Rank-5: 85.26% | Rank-10: 92.27%|                 Rank-20: 97.45%| mAP: 56.93%
+rank-1: 58.69%, mAP: 56.93%
+******************************************************************************
+==>2021-12-25_18-19-28
+==> Start Training...
+Epoch: [31][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6563   id:1.9950   tri:0.6613   Batch Time:0.51  Accuracy:86.58   
+Epoch: [31][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0536   id:1.8356   tri:0.2181   Batch Time:0.51  Accuracy:86.78   
+Epoch: [31][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0621   id:1.8562   tri:0.2059   Batch Time:0.51  Accuracy:86.92   
+Epoch: [31][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9775   id:1.8819   tri:0.0955   Batch Time:0.51  Accuracy:87.13   
+Epoch: [31][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3778   id:1.2980   tri:0.0799   Batch Time:0.51  Accuracy:86.98   
+Epoch: [31][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5061   id:1.4870   tri:0.0191   Batch Time:0.51  Accuracy:86.93   
+Original Observation:   Rank-1: 58.57% | Rank-5: 86.31% | Rank-10: 93.45%|                 Rank-20: 97.59%| mAP: 57.06%
+rank-1: 58.57%, mAP: 57.06%
+******************************************************************************
+==>2021-12-25_18-25-37
+==> Start Training...
+Epoch: [32][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0503   id:1.5231   tri:0.5273   Batch Time:0.52  Accuracy:86.79   
+Epoch: [32][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9733   id:1.7344   tri:0.2390   Batch Time:0.52  Accuracy:86.67   
+Epoch: [32][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8812   id:1.6936   tri:0.1876   Batch Time:0.52  Accuracy:86.73   
+Epoch: [32][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.7627   id:2.1816   tri:0.5811   Batch Time:0.52  Accuracy:86.91   
+Epoch: [32][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4253   id:1.3136   tri:0.1117   Batch Time:0.52  Accuracy:86.88   
+Epoch: [32][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7019   id:1.5191   tri:0.1828   Batch Time:0.52  Accuracy:86.86   
+Original Observation:   Rank-1: 58.23% | Rank-5: 84.66% | Rank-10: 92.09%|                 Rank-20: 96.87%| mAP: 56.37%
+rank-1: 58.23%, mAP: 56.37%
+******************************************************************************
+==>2021-12-25_18-31-48
+==> Start Training...
+Epoch: [33][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4139   id:1.4013   tri:0.0125   Batch Time:0.52  Accuracy:87.20   
+Epoch: [33][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8109   id:1.7433   tri:0.0676   Batch Time:0.52  Accuracy:87.09   
+Epoch: [33][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0755   id:1.4671   tri:0.6084   Batch Time:0.52  Accuracy:87.04   
+Epoch: [33][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.1483   id:1.1289   tri:0.0194   Batch Time:0.52  Accuracy:86.96   
+Epoch: [33][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4571   id:1.3833   tri:0.0739   Batch Time:0.52  Accuracy:87.03   
+Epoch: [33][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.0681   id:2.3127   tri:0.7553   Batch Time:0.52  Accuracy:87.00   
+Original Observation:   Rank-1: 58.32% | Rank-5: 85.49% | Rank-10: 92.93%|                 Rank-20: 97.40%| mAP: 57.39%
+rank-1: 58.32%, mAP: 57.39%
+******************************************************************************
+==>2021-12-25_18-37-59
+==> Start Training...
+Epoch: [34][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4565   id:1.3127   tri:0.1438   Batch Time:0.52  Accuracy:86.62   
+Epoch: [34][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.1344   id:2.2301   tri:0.9043   Batch Time:0.52  Accuracy:86.95   
+Epoch: [34][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5348   id:2.2394   tri:0.2954   Batch Time:0.52  Accuracy:86.89   
+Epoch: [34][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6116   id:2.3774   tri:0.2342   Batch Time:0.52  Accuracy:86.68   
+Epoch: [34][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4165   id:1.3554   tri:0.0611   Batch Time:0.52  Accuracy:86.59   
+Epoch: [34][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5555   id:1.4305   tri:0.1249   Batch Time:0.52  Accuracy:86.49   
+Original Observation:   Rank-1: 59.01% | Rank-5: 85.49% | Rank-10: 92.38%|                 Rank-20: 97.31%| mAP: 57.38%
+rank-1: 59.01%, mAP: 57.38%
+******************************************************************************
+==>2021-12-25_18-44-10
+==> Start Training...
+Epoch: [35][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.2820   id:2.6567   tri:0.6253   Batch Time:0.52  Accuracy:86.22   
+Epoch: [35][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3306   id:1.2849   tri:0.0456   Batch Time:0.52  Accuracy:86.40   
+Epoch: [35][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8059   id:1.7253   tri:0.0806   Batch Time:0.52  Accuracy:86.28   
+Epoch: [35][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5896   id:1.3141   tri:0.2754   Batch Time:0.52  Accuracy:86.50   
+Epoch: [35][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5110   id:1.4589   tri:0.0521   Batch Time:0.52  Accuracy:86.38   
+Epoch: [35][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8112   id:1.6040   tri:0.2072   Batch Time:0.52  Accuracy:86.31   
+Original Observation:   Rank-1: 59.29% | Rank-5: 86.14% | Rank-10: 92.88%|                 Rank-20: 97.54%| mAP: 57.77%
+rank-1: 59.29%, mAP: 57.77%
+******************************************************************************
+==>2021-12-25_18-50-21
+==> Start Training...
+Epoch: [36][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.1214   id:2.5027   tri:0.6188   Batch Time:0.52  Accuracy:86.99   
+Epoch: [36][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5162   id:2.2669   tri:0.2494   Batch Time:0.52  Accuracy:86.67   
+Epoch: [36][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6044   id:2.5174   tri:0.0870   Batch Time:0.52  Accuracy:86.73   
+Epoch: [36][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:4.3610   id:3.7664   tri:0.5947   Batch Time:0.52  Accuracy:86.67   
+Epoch: [36][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5378   id:1.4631   tri:0.0747   Batch Time:0.52  Accuracy:86.70   
+Epoch: [36][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6943   id:2.3144   tri:0.3799   Batch Time:0.52  Accuracy:86.60   
+Original Observation:   Rank-1: 59.80% | Rank-5: 85.29% | Rank-10: 92.25%|                 Rank-20: 96.93%| mAP: 57.70%
+rank-1: 59.80%, mAP: 57.70%
+******************************************************************************
+==>2021-12-25_18-56-32
+==> Start Training...
+Epoch: [37][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0945   id:1.7441   tri:0.3504   Batch Time:0.52  Accuracy:86.45   
+Epoch: [37][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4570   id:2.1603   tri:0.2968   Batch Time:0.52  Accuracy:86.86   
+Epoch: [37][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1619   id:1.8907   tri:0.2713   Batch Time:0.52  Accuracy:86.58   
+Epoch: [37][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8893   id:1.8033   tri:0.0860   Batch Time:0.52  Accuracy:86.60   
+Epoch: [37][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0569   id:1.6467   tri:0.4101   Batch Time:0.52  Accuracy:86.73   
+Epoch: [37][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5167   id:1.3229   tri:0.1938   Batch Time:0.52  Accuracy:86.75   
+Original Observation:   Rank-1: 58.74% | Rank-5: 86.16% | Rank-10: 92.99%|                 Rank-20: 97.85%| mAP: 57.02%
+rank-1: 58.74%, mAP: 57.02%
+******************************************************************************
+==>2021-12-25_19-02-43
+==> Start Training...
+Epoch: [38][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.1531   id:1.0782   tri:0.0749   Batch Time:0.52  Accuracy:87.22   
+Epoch: [38][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2418   id:1.1786   tri:0.0632   Batch Time:0.52  Accuracy:87.16   
+Epoch: [38][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.1107   id:1.0917   tri:0.0190   Batch Time:0.52  Accuracy:87.07   
+Epoch: [38][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8704   id:1.6219   tri:0.2486   Batch Time:0.52  Accuracy:86.87   
+Epoch: [38][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.8869   id:2.4395   tri:0.4474   Batch Time:0.52  Accuracy:86.91   
+Epoch: [38][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4189   id:2.1326   tri:0.2863   Batch Time:0.52  Accuracy:86.92   
+Original Observation:   Rank-1: 58.27% | Rank-5: 85.69% | Rank-10: 93.15%|                 Rank-20: 98.04%| mAP: 56.80%
+rank-1: 58.27%, mAP: 56.80%
+******************************************************************************
+==>2021-12-25_19-08-54
+==> Start Training...
+Epoch: [39][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5454   id:1.4602   tri:0.0852   Batch Time:0.52  Accuracy:86.68   
+Epoch: [39][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9840   id:1.8272   tri:0.1568   Batch Time:0.51  Accuracy:86.90   
+Epoch: [39][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5862   id:1.5676   tri:0.0187   Batch Time:0.52  Accuracy:86.89   
+Epoch: [39][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8470   id:1.6050   tri:0.2420   Batch Time:0.52  Accuracy:86.82   
+Epoch: [39][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5551   id:2.4520   tri:0.1031   Batch Time:0.52  Accuracy:86.80   
+Epoch: [39][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4071   id:1.3674   tri:0.0397   Batch Time:0.52  Accuracy:86.75   
+Original Observation:   Rank-1: 58.26% | Rank-5: 83.99% | Rank-10: 91.61%|                 Rank-20: 97.01%| mAP: 57.00%
+rank-1: 58.26%, mAP: 57.00%
+******************************************************************************
+==>2021-12-25_19-15-05
+==> Start Training...
+Epoch: [40][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7409   id:1.6443   tri:0.0966   Batch Time:0.52  Accuracy:86.66   
+Epoch: [40][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.0228   id:2.6224   tri:0.4005   Batch Time:0.52  Accuracy:86.33   
+Epoch: [40][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7789   id:1.6911   tri:0.0878   Batch Time:0.52  Accuracy:86.65   
+Epoch: [40][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9864   id:1.8196   tri:0.1668   Batch Time:0.52  Accuracy:86.84   
+Epoch: [40][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3429   id:1.0374   tri:0.3055   Batch Time:0.51  Accuracy:86.81   
+Epoch: [40][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1626   id:1.8039   tri:0.3587   Batch Time:0.52  Accuracy:86.82   
+Original Observation:   Rank-1: 58.26% | Rank-5: 85.43% | Rank-10: 92.90%|                 Rank-20: 97.84%| mAP: 57.05%
+rank-1: 58.26%, mAP: 57.05%
+******************************************************************************
+==>2021-12-25_19-21-16
+==> Start Training...
+Epoch: [41][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2917   id:1.2483   tri:0.0435   Batch Time:0.51  Accuracy:86.57   
+Epoch: [41][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1976   id:1.6025   tri:0.5951   Batch Time:0.51  Accuracy:87.15   
+Epoch: [41][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8045   id:1.7131   tri:0.0914   Batch Time:0.51  Accuracy:87.03   
+Epoch: [41][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.0212   id:2.7574   tri:0.2638   Batch Time:0.51  Accuracy:87.14   
+Epoch: [41][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6177   id:2.1289   tri:0.4888   Batch Time:0.51  Accuracy:87.04   
+Epoch: [41][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4092   id:2.1293   tri:0.2799   Batch Time:0.51  Accuracy:86.94   
+Original Observation:   Rank-1: 58.51% | Rank-5: 85.98% | Rank-10: 92.54%|                 Rank-20: 97.53%| mAP: 56.47%
+rank-1: 58.51%, mAP: 56.47%
+******************************************************************************
+==>2021-12-25_19-27-25
+==> Start Training...
+Epoch: [42][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1746   id:1.8328   tri:0.3418   Batch Time:0.51  Accuracy:86.62   
+Epoch: [42][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7632   id:1.5058   tri:0.2575   Batch Time:0.51  Accuracy:87.03   
+Epoch: [42][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3514   id:1.3105   tri:0.0408   Batch Time:0.51  Accuracy:86.83   
+Epoch: [42][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.8322   id:2.6435   tri:0.1887   Batch Time:0.51  Accuracy:86.81   
+Epoch: [42][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.8876   id:2.3919   tri:0.4958   Batch Time:0.51  Accuracy:86.68   
+Epoch: [42][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5539   id:2.3930   tri:0.1609   Batch Time:0.51  Accuracy:86.67   
+Original Observation:   Rank-1: 58.90% | Rank-5: 86.13% | Rank-10: 92.93%|                 Rank-20: 97.53%| mAP: 57.48%
+rank-1: 58.90%, mAP: 57.48%
+******************************************************************************
+==>2021-12-25_19-33-33
+==> Start Training...
+Epoch: [43][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7890   id:1.3210   tri:0.4680   Batch Time:0.51  Accuracy:87.05   
+Epoch: [43][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3737   id:1.3237   tri:0.0500   Batch Time:0.51  Accuracy:86.77   
+Epoch: [43][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3675   id:2.1990   tri:0.1685   Batch Time:0.51  Accuracy:86.84   
+Epoch: [43][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0828   id:2.0057   tri:0.0771   Batch Time:0.51  Accuracy:86.86   
+Epoch: [43][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.9229   id:2.5293   tri:0.3935   Batch Time:0.51  Accuracy:86.82   
+Epoch: [43][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4321   id:1.3950   tri:0.0370   Batch Time:0.51  Accuracy:86.95   
+Original Observation:   Rank-1: 58.85% | Rank-5: 85.64% | Rank-10: 92.66%|                 Rank-20: 97.74%| mAP: 57.13%
+rank-1: 58.85%, mAP: 57.13%
+******************************************************************************
+==>2021-12-25_19-39-41
+==> Start Training...
+Epoch: [44][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0055   id:1.8878   tri:0.1176   Batch Time:0.51  Accuracy:85.75   
+Epoch: [44][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7840   id:1.7317   tri:0.0523   Batch Time:0.51  Accuracy:86.37   
+Epoch: [44][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3858   id:1.3284   tri:0.0573   Batch Time:0.51  Accuracy:86.77   
+Epoch: [44][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4815   id:1.3969   tri:0.0846   Batch Time:0.51  Accuracy:86.82   
+Epoch: [44][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4094   id:1.3114   tri:0.0980   Batch Time:0.51  Accuracy:86.91   
+Epoch: [44][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9439   id:1.8432   tri:0.1007   Batch Time:0.51  Accuracy:86.81   
+Original Observation:   Rank-1: 58.85% | Rank-5: 85.41% | Rank-10: 92.80%|                 Rank-20: 97.69%| mAP: 57.53%
+rank-1: 58.85%, mAP: 57.53%
+******************************************************************************
+==>2021-12-25_19-45-49
+==> Start Training...
+Epoch: [45][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:4.1330   id:2.9038   tri:1.2291   Batch Time:0.51  Accuracy:87.46   
+Epoch: [45][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1753   id:2.0040   tri:0.1713   Batch Time:0.51  Accuracy:87.20   
+Epoch: [45][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3358   id:1.9996   tri:0.3362   Batch Time:0.51  Accuracy:87.10   
+Epoch: [45][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9789   id:1.3770   tri:0.6019   Batch Time:0.51  Accuracy:87.09   
+Epoch: [45][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6067   id:1.5465   tri:0.0602   Batch Time:0.51  Accuracy:87.03   
+Epoch: [45][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9291   id:1.7859   tri:0.1432   Batch Time:0.51  Accuracy:87.02   
+Original Observation:   Rank-1: 57.93% | Rank-5: 85.36% | Rank-10: 92.57%|                 Rank-20: 97.46%| mAP: 56.56%
+rank-1: 57.93%, mAP: 56.56%
+******************************************************************************
+==>2021-12-25_19-51-56
+==> Start Training...
+Epoch: [46][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4236   id:1.4026   tri:0.0210   Batch Time:0.51  Accuracy:85.62   
+Epoch: [46][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3038   id:1.2333   tri:0.0705   Batch Time:0.51  Accuracy:86.15   
+Epoch: [46][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3342   id:2.1918   tri:0.1424   Batch Time:0.51  Accuracy:86.23   
+Epoch: [46][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4998   id:1.3454   tri:0.1544   Batch Time:0.51  Accuracy:86.53   
+Epoch: [46][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6921   id:1.6172   tri:0.0749   Batch Time:0.51  Accuracy:86.55   
+Epoch: [46][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4485   id:1.4375   tri:0.0110   Batch Time:0.51  Accuracy:86.61   
+Original Observation:   Rank-1: 58.31% | Rank-5: 85.67% | Rank-10: 92.68%|                 Rank-20: 97.65%| mAP: 57.07%
+rank-1: 58.31%, mAP: 57.07%
+******************************************************************************
+==>2021-12-25_19-58-04
+==> Start Training...
+Epoch: [47][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.1224   id:1.1116   tri:0.0108   Batch Time:0.51  Accuracy:86.53   
+Epoch: [47][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4683   id:1.4639   tri:0.0044   Batch Time:0.51  Accuracy:86.85   
+Epoch: [47][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7781   id:1.7064   tri:0.0717   Batch Time:0.51  Accuracy:86.93   
+Epoch: [47][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8855   id:1.8462   tri:0.0394   Batch Time:0.51  Accuracy:86.93   
+Epoch: [47][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2484   id:1.9732   tri:0.2752   Batch Time:0.51  Accuracy:87.01   
+Epoch: [47][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6352   id:1.5502   tri:0.0850   Batch Time:0.51  Accuracy:86.97   
+Original Observation:   Rank-1: 57.85% | Rank-5: 84.99% | Rank-10: 92.48%|                 Rank-20: 97.32%| mAP: 56.70%
+rank-1: 57.85%, mAP: 56.70%
+******************************************************************************
+==>2021-12-25_20-04-13
+==> Start Training...
+Epoch: [48][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0805   id:1.9320   tri:0.1485   Batch Time:0.51  Accuracy:86.17   
+Epoch: [48][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9857   id:1.8627   tri:0.1230   Batch Time:0.51  Accuracy:86.68   
+Epoch: [48][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4473   id:1.3948   tri:0.0526   Batch Time:0.51  Accuracy:86.96   
+Epoch: [48][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5832   id:1.5823   tri:0.0009   Batch Time:0.51  Accuracy:86.98   
+Epoch: [48][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2351   id:1.9039   tri:0.3313   Batch Time:0.51  Accuracy:86.90   
+Epoch: [48][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9392   id:1.9204   tri:0.0188   Batch Time:0.51  Accuracy:86.78   
+Original Observation:   Rank-1: 58.30% | Rank-5: 85.70% | Rank-10: 92.60%|                 Rank-20: 97.06%| mAP: 57.04%
+rank-1: 58.30%, mAP: 57.04%
+******************************************************************************
+==>2021-12-25_20-10-22
+==> Start Training...
+Epoch: [49][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6856   id:1.5872   tri:0.0985   Batch Time:0.51  Accuracy:87.23   
+Epoch: [49][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3973   id:2.1634   tri:0.2338   Batch Time:0.51  Accuracy:86.97   
+Epoch: [49][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2178   id:1.1927   tri:0.0250   Batch Time:0.51  Accuracy:87.01   
+Epoch: [49][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6653   id:1.5027   tri:0.1626   Batch Time:0.51  Accuracy:86.89   
+Epoch: [49][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.1701   id:1.1529   tri:0.0171   Batch Time:0.51  Accuracy:86.93   
+Epoch: [49][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4857   id:1.4304   tri:0.0553   Batch Time:0.51  Accuracy:86.89   
+Original Observation:   Rank-1: 58.45% | Rank-5: 86.02% | Rank-10: 93.24%|                 Rank-20: 97.73%| mAP: 56.73%
+rank-1: 58.45%, mAP: 56.73%
+******************************************************************************
+==>2021-12-25_20-16-30
+==> Start Training...
+Epoch: [50][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5123   id:2.3258   tri:0.1865   Batch Time:0.51  Accuracy:85.76   
+Epoch: [50][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0267   id:1.8456   tri:0.1811   Batch Time:0.51  Accuracy:86.18   
+Epoch: [50][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.7639   id:1.9088   tri:0.8551   Batch Time:0.51  Accuracy:86.15   
+Epoch: [50][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6330   id:2.1697   tri:0.4633   Batch Time:0.51  Accuracy:86.42   
+Epoch: [50][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3651   id:1.9202   tri:0.4449   Batch Time:0.51  Accuracy:86.60   
+Epoch: [50][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.7207   id:2.3929   tri:0.3278   Batch Time:0.51  Accuracy:86.71   
+Original Observation:   Rank-1: 59.16% | Rank-5: 85.77% | Rank-10: 92.46%|                 Rank-20: 97.33%| mAP: 57.97%
+rank-1: 59.16%, mAP: 57.97%
+******************************************************************************
+==>2021-12-25_20-22-39
+==> Start Training...
+Epoch: [51][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.0664   id:1.0519   tri:0.0145   Batch Time:0.51  Accuracy:86.46   
+Epoch: [51][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3160   id:1.6846   tri:0.6314   Batch Time:0.51  Accuracy:86.77   
+Epoch: [51][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5823   id:1.4141   tri:0.1682   Batch Time:0.51  Accuracy:86.94   
+Epoch: [51][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.7625   id:2.5827   tri:0.1798   Batch Time:0.51  Accuracy:87.00   
+Epoch: [51][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7300   id:1.6580   tri:0.0720   Batch Time:0.51  Accuracy:86.90   
+Epoch: [51][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6755   id:2.1878   tri:0.4877   Batch Time:0.51  Accuracy:86.96   
+Original Observation:   Rank-1: 56.80% | Rank-5: 83.70% | Rank-10: 91.64%|                 Rank-20: 97.05%| mAP: 55.68%
+rank-1: 56.80%, mAP: 55.68%
+******************************************************************************
+==>2021-12-25_20-28-47
+==> Start Training...
+Epoch: [52][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7018   id:1.6479   tri:0.0538   Batch Time:0.51  Accuracy:86.26   
+Epoch: [52][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6916   id:2.2237   tri:0.4679   Batch Time:0.51  Accuracy:86.32   
+Epoch: [52][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3691   id:2.0624   tri:0.3068   Batch Time:0.51  Accuracy:86.26   
+Epoch: [52][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3302   id:1.9493   tri:0.3810   Batch Time:0.51  Accuracy:86.22   
+Epoch: [52][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2175   id:1.1904   tri:0.0270   Batch Time:0.51  Accuracy:86.36   
+Epoch: [52][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6420   id:1.6177   tri:0.0242   Batch Time:0.51  Accuracy:86.45   
+Original Observation:   Rank-1: 58.75% | Rank-5: 85.99% | Rank-10: 92.26%|                 Rank-20: 97.45%| mAP: 57.26%
+rank-1: 58.75%, mAP: 57.26%
+******************************************************************************
+==>2021-12-25_20-34-54
+==> Start Training...
+Epoch: [53][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9690   id:1.8584   tri:0.1106   Batch Time:0.51  Accuracy:86.45   
+Epoch: [53][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.9983   id:2.3984   tri:0.5999   Batch Time:0.51  Accuracy:85.91   
+Epoch: [53][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3847   id:2.2357   tri:0.1490   Batch Time:0.51  Accuracy:86.22   
+Epoch: [53][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0248   id:1.8489   tri:0.1759   Batch Time:0.51  Accuracy:86.59   
+Epoch: [53][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.0740   id:1.0599   tri:0.0141   Batch Time:0.51  Accuracy:86.66   
+Epoch: [53][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9766   id:1.7838   tri:0.1928   Batch Time:0.51  Accuracy:86.67   
+Original Observation:   Rank-1: 59.81% | Rank-5: 85.58% | Rank-10: 92.48%|                 Rank-20: 97.64%| mAP: 57.77%
+rank-1: 59.81%, mAP: 57.77%
+******************************************************************************
+==>2021-12-25_20-41-02
+==> Start Training...
+Epoch: [54][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4951   id:1.4356   tri:0.0595   Batch Time:0.51  Accuracy:86.92   
+Epoch: [54][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5588   id:1.5078   tri:0.0510   Batch Time:0.51  Accuracy:86.65   
+Epoch: [54][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3644   id:2.2127   tri:0.1517   Batch Time:0.51  Accuracy:86.89   
+Epoch: [54][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.1677   id:1.1414   tri:0.0263   Batch Time:0.51  Accuracy:86.75   
+Epoch: [54][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4560   id:1.3054   tri:0.1506   Batch Time:0.51  Accuracy:86.88   
+Epoch: [54][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8921   id:1.7982   tri:0.0939   Batch Time:0.51  Accuracy:86.87   
+Original Observation:   Rank-1: 57.71% | Rank-5: 84.90% | Rank-10: 91.68%|                 Rank-20: 96.46%| mAP: 56.52%
+rank-1: 57.71%, mAP: 56.52%
+******************************************************************************
+==>2021-12-25_20-47-10
+==> Start Training...
+Epoch: [55][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.1685   id:1.1348   tri:0.0338   Batch Time:0.51  Accuracy:87.14   
+Epoch: [55][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5966   id:2.3734   tri:0.2232   Batch Time:0.51  Accuracy:86.91   
+Epoch: [55][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4772   id:2.1919   tri:0.2853   Batch Time:0.51  Accuracy:86.79   
+Epoch: [55][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5408   id:2.2941   tri:0.2468   Batch Time:0.51  Accuracy:86.90   
+Epoch: [55][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6082   id:1.5592   tri:0.0490   Batch Time:0.51  Accuracy:86.96   
+Epoch: [55][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8570   id:1.7985   tri:0.0585   Batch Time:0.51  Accuracy:86.95   
+Original Observation:   Rank-1: 60.33% | Rank-5: 86.52% | Rank-10: 93.31%|                 Rank-20: 97.93%| mAP: 58.52%
+rank-1: 60.33%, mAP: 58.52%
+******************************************************************************
+==>2021-12-25_20-53-17
+==> Start Training...
+Epoch: [56][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5159   id:1.4863   tri:0.0295   Batch Time:0.51  Accuracy:86.74   
+Epoch: [56][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0865   id:1.9401   tri:0.1465   Batch Time:0.51  Accuracy:86.05   
+Epoch: [56][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5151   id:2.3247   tri:0.1903   Batch Time:0.51  Accuracy:86.00   
+Epoch: [56][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7204   id:1.6764   tri:0.0440   Batch Time:0.51  Accuracy:86.22   
+Epoch: [56][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6847   id:1.6363   tri:0.0484   Batch Time:0.51  Accuracy:86.36   
+Epoch: [56][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6358   id:1.4588   tri:0.1771   Batch Time:0.51  Accuracy:86.48   
+Original Observation:   Rank-1: 59.75% | Rank-5: 85.88% | Rank-10: 92.48%|                 Rank-20: 97.61%| mAP: 57.85%
+rank-1: 59.75%, mAP: 57.85%
+******************************************************************************
+==>2021-12-25_20-59-25
+==> Start Training...
+Epoch: [57][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.0467   id:1.0254   tri:0.0213   Batch Time:0.51  Accuracy:85.86   
+Epoch: [57][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2424   id:1.1269   tri:0.1155   Batch Time:0.51  Accuracy:86.30   
+Epoch: [57][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8183   id:1.5794   tri:0.2390   Batch Time:0.51  Accuracy:86.36   
+Epoch: [57][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1232   id:1.9104   tri:0.2128   Batch Time:0.51  Accuracy:86.31   
+Epoch: [57][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2186   id:1.7658   tri:0.4529   Batch Time:0.51  Accuracy:86.35   
+Epoch: [57][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.8867   id:3.1245   tri:0.7622   Batch Time:0.51  Accuracy:86.29   
+Original Observation:   Rank-1: 58.39% | Rank-5: 85.57% | Rank-10: 92.49%|                 Rank-20: 97.30%| mAP: 57.24%
+rank-1: 58.39%, mAP: 57.24%
+******************************************************************************
+==>2021-12-25_21-05-33
+==> Start Training...
+Epoch: [58][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7580   id:1.6156   tri:0.1423   Batch Time:0.51  Accuracy:86.54   
+Epoch: [58][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2297   id:1.2075   tri:0.0222   Batch Time:0.51  Accuracy:86.64   
+Epoch: [58][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1425   id:1.8219   tri:0.3206   Batch Time:0.51  Accuracy:86.58   
+Epoch: [58][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0143   id:1.8670   tri:0.1473   Batch Time:0.51  Accuracy:86.48   
+Epoch: [58][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.2057   id:2.9571   tri:0.2486   Batch Time:0.51  Accuracy:86.41   
+Epoch: [58][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:0.9142   id:0.8441   tri:0.0701   Batch Time:0.51  Accuracy:86.36   
+Original Observation:   Rank-1: 58.16% | Rank-5: 84.96% | Rank-10: 91.90%|                 Rank-20: 96.95%| mAP: 57.08%
+rank-1: 58.16%, mAP: 57.08%
+******************************************************************************
+==>2021-12-25_21-11-41
+==> Start Training...
+Epoch: [59][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.0542   id:1.0438   tri:0.0104   Batch Time:0.51  Accuracy:86.77   
+Epoch: [59][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:4.0116   id:3.3825   tri:0.6291   Batch Time:0.51  Accuracy:86.61   
+Epoch: [59][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7820   id:1.7482   tri:0.0338   Batch Time:0.51  Accuracy:86.76   
+Epoch: [59][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4108   id:1.3614   tri:0.0494   Batch Time:0.51  Accuracy:86.74   
+Epoch: [59][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.8153   id:2.8901   tri:0.9252   Batch Time:0.51  Accuracy:86.66   
+Epoch: [59][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7962   id:1.7166   tri:0.0796   Batch Time:0.51  Accuracy:86.73   
+Original Observation:   Rank-1: 58.68% | Rank-5: 84.97% | Rank-10: 91.86%|                 Rank-20: 97.28%| mAP: 57.29%
+rank-1: 58.68%, mAP: 57.29%
+******************************************************************************
+==>2021-12-25_21-17-49
+==> Start Training...
+Epoch: [60][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5144   id:1.4798   tri:0.0345   Batch Time:0.51  Accuracy:87.89   
+Epoch: [60][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4478   id:2.2342   tri:0.2136   Batch Time:0.51  Accuracy:87.28   
+Epoch: [60][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1605   id:1.8841   tri:0.2764   Batch Time:0.51  Accuracy:87.09   
+Epoch: [60][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.7439   id:2.4168   tri:0.3271   Batch Time:0.51  Accuracy:87.02   
+Epoch: [60][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3980   id:1.2394   tri:0.1586   Batch Time:0.51  Accuracy:86.89   
+Epoch: [60][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.8692   id:2.3321   tri:0.5371   Batch Time:0.51  Accuracy:86.77   
+Original Observation:   Rank-1: 59.08% | Rank-5: 85.24% | Rank-10: 92.27%|                 Rank-20: 96.87%| mAP: 57.15%
+rank-1: 59.08%, mAP: 57.15%
+******************************************************************************
+==>2021-12-25_21-23-58
+==> Start Training...
+Epoch: [61][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5998   id:1.5250   tri:0.0748   Batch Time:0.51  Accuracy:86.93   
+Epoch: [61][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.1833   id:1.1772   tri:0.0061   Batch Time:0.51  Accuracy:86.61   
+Epoch: [61][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3570   id:2.2810   tri:0.0760   Batch Time:0.51  Accuracy:86.36   
+Epoch: [61][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.8249   id:1.9950   tri:0.8299   Batch Time:0.51  Accuracy:86.33   
+Epoch: [61][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5932   id:1.5675   tri:0.0257   Batch Time:0.51  Accuracy:86.50   
+Epoch: [61][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2955   id:1.1825   tri:0.1130   Batch Time:0.51  Accuracy:86.52   
+Original Observation:   Rank-1: 58.24% | Rank-5: 85.83% | Rank-10: 92.77%|                 Rank-20: 97.82%| mAP: 57.61%
+rank-1: 58.24%, mAP: 57.61%
+******************************************************************************
+==>2021-12-25_21-30-06
+==> Start Training...
+Epoch: [62][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0568   id:1.5547   tri:0.5021   Batch Time:0.51  Accuracy:86.66   
+Epoch: [62][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1891   id:2.0104   tri:0.1787   Batch Time:0.51  Accuracy:86.49   
+Epoch: [62][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4052   id:1.7910   tri:0.6142   Batch Time:0.51  Accuracy:86.39   
+Epoch: [62][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4023   id:2.1403   tri:0.2619   Batch Time:0.51  Accuracy:86.56   
+Epoch: [62][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5789   id:1.4504   tri:0.1285   Batch Time:0.51  Accuracy:86.63   
+Epoch: [62][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.0983   id:1.0084   tri:0.0899   Batch Time:0.51  Accuracy:86.70   
+Original Observation:   Rank-1: 59.04% | Rank-5: 86.02% | Rank-10: 92.79%|                 Rank-20: 97.83%| mAP: 57.23%
+rank-1: 59.04%, mAP: 57.23%
+******************************************************************************
+==>2021-12-25_21-36-13
+==> Start Training...
+Epoch: [63][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.2921   id:3.0803   tri:0.2118   Batch Time:0.51  Accuracy:87.12   
+Epoch: [63][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.2332   id:2.2261   tri:1.0070   Batch Time:0.51  Accuracy:86.99   
+Epoch: [63][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5693   id:2.0455   tri:0.5238   Batch Time:0.51  Accuracy:86.85   
+Epoch: [63][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2756   id:1.2671   tri:0.0085   Batch Time:0.51  Accuracy:86.92   
+Epoch: [63][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8754   id:1.6234   tri:0.2520   Batch Time:0.51  Accuracy:86.97   
+Epoch: [63][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6442   id:2.3442   tri:0.3000   Batch Time:0.51  Accuracy:86.96   
+Original Observation:   Rank-1: 56.74% | Rank-5: 85.01% | Rank-10: 92.56%|                 Rank-20: 97.62%| mAP: 56.42%
+rank-1: 56.74%, mAP: 56.42%
+******************************************************************************
+==>2021-12-25_21-42-21
+==> Start Training...
+Epoch: [64][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9087   id:1.6817   tri:0.2270   Batch Time:0.51  Accuracy:87.34   
+Epoch: [64][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3112   id:1.0579   tri:0.2533   Batch Time:0.51  Accuracy:87.10   
+Epoch: [64][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6802   id:2.3926   tri:0.2876   Batch Time:0.51  Accuracy:87.15   
+Epoch: [64][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5798   id:2.0304   tri:0.5494   Batch Time:0.51  Accuracy:87.12   
+Epoch: [64][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1437   id:1.8986   tri:0.2451   Batch Time:0.51  Accuracy:87.11   
+Epoch: [64][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4354   id:1.6725   tri:0.7629   Batch Time:0.51  Accuracy:87.05   
+Original Observation:   Rank-1: 57.98% | Rank-5: 84.85% | Rank-10: 92.61%|                 Rank-20: 97.61%| mAP: 56.52%
+rank-1: 57.98%, mAP: 56.52%
+******************************************************************************
+==>2021-12-25_21-48-29
+==> Start Training...
+Epoch: [65][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8893   id:1.5710   tri:0.3183   Batch Time:0.51  Accuracy:86.51   
+Epoch: [65][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7050   id:1.5677   tri:0.1373   Batch Time:0.51  Accuracy:86.43   
+Epoch: [65][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7505   id:1.6886   tri:0.0618   Batch Time:0.51  Accuracy:86.52   
+Epoch: [65][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4021   id:2.0828   tri:0.3193   Batch Time:0.51  Accuracy:86.57   
+Epoch: [65][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9174   id:1.8418   tri:0.0756   Batch Time:0.51  Accuracy:86.63   
+Epoch: [65][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.8331   id:2.2325   tri:0.6005   Batch Time:0.51  Accuracy:86.71   
+Original Observation:   Rank-1: 59.01% | Rank-5: 85.79% | Rank-10: 92.62%|                 Rank-20: 97.54%| mAP: 57.20%
+rank-1: 59.01%, mAP: 57.20%
+******************************************************************************
+==>2021-12-25_21-54-38
+==> Start Training...
+Epoch: [66][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2844   id:1.2549   tri:0.0295   Batch Time:0.51  Accuracy:86.75   
+Epoch: [66][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3031   id:2.0185   tri:0.2846   Batch Time:0.51  Accuracy:86.73   
+Epoch: [66][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5265   id:1.9983   tri:0.5281   Batch Time:0.51  Accuracy:86.71   
+Epoch: [66][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8733   id:1.6499   tri:0.2234   Batch Time:0.51  Accuracy:86.96   
+Epoch: [66][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8645   id:1.8016   tri:0.0629   Batch Time:0.51  Accuracy:86.95   
+Epoch: [66][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:4.1074   id:2.8251   tri:1.2823   Batch Time:0.51  Accuracy:87.02   
+Original Observation:   Rank-1: 59.14% | Rank-5: 86.17% | Rank-10: 93.24%|                 Rank-20: 97.85%| mAP: 57.43%
+rank-1: 59.14%, mAP: 57.43%
+******************************************************************************
+==>2021-12-25_22-00-46
+==> Start Training...
+Epoch: [67][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6159   id:1.6092   tri:0.0067   Batch Time:0.51  Accuracy:86.86   
+Epoch: [67][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3768   id:1.2876   tri:0.0892   Batch Time:0.51  Accuracy:87.02   
+Epoch: [67][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6201   id:1.6861   tri:0.9340   Batch Time:0.51  Accuracy:86.82   
+Epoch: [67][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2435   id:0.9797   tri:0.2638   Batch Time:0.51  Accuracy:86.84   
+Epoch: [67][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.1173   id:2.5707   tri:0.5466   Batch Time:0.51  Accuracy:86.80   
+Epoch: [67][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4116   id:1.3272   tri:0.0843   Batch Time:0.51  Accuracy:86.84   
+Original Observation:   Rank-1: 58.37% | Rank-5: 85.60% | Rank-10: 93.07%|                 Rank-20: 97.79%| mAP: 57.10%
+rank-1: 58.37%, mAP: 57.10%
+******************************************************************************
+==>2021-12-25_22-06-54
+==> Start Training...
+Epoch: [68][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6695   id:2.1345   tri:0.5350   Batch Time:0.51  Accuracy:87.78   
+Epoch: [68][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7849   id:1.7601   tri:0.0248   Batch Time:0.51  Accuracy:87.57   
+Epoch: [68][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0280   id:1.5397   tri:0.4883   Batch Time:0.51  Accuracy:87.29   
+Epoch: [68][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3936   id:1.2138   tri:0.1799   Batch Time:0.51  Accuracy:87.42   
+Epoch: [68][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6645   id:1.6096   tri:0.0548   Batch Time:0.51  Accuracy:87.34   
+Epoch: [68][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:0.8624   id:0.8346   tri:0.0278   Batch Time:0.51  Accuracy:87.30   
+Original Observation:   Rank-1: 59.75% | Rank-5: 86.55% | Rank-10: 93.13%|                 Rank-20: 97.79%| mAP: 57.95%
+rank-1: 59.75%, mAP: 57.95%
+******************************************************************************
+==>2021-12-25_22-13-02
+==> Start Training...
+Epoch: [69][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9375   id:1.7508   tri:0.1867   Batch Time:0.51  Accuracy:87.20   
+Epoch: [69][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8066   id:1.7028   tri:0.1038   Batch Time:0.51  Accuracy:86.51   
+Epoch: [69][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4651   id:1.4080   tri:0.0571   Batch Time:0.51  Accuracy:86.49   
+Epoch: [69][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0333   id:2.0028   tri:0.0306   Batch Time:0.51  Accuracy:86.75   
+Epoch: [69][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9217   id:1.8744   tri:0.0473   Batch Time:0.51  Accuracy:86.67   
+Epoch: [69][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3941   id:2.1693   tri:0.2247   Batch Time:0.51  Accuracy:86.71   
+Original Observation:   Rank-1: 58.56% | Rank-5: 85.88% | Rank-10: 92.74%|                 Rank-20: 97.55%| mAP: 56.99%
+rank-1: 58.56%, mAP: 56.99%
+******************************************************************************
+==>2021-12-25_22-19-10
+==> Start Training...
+Epoch: [70][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5040   id:1.5039   tri:0.0000   Batch Time:0.51  Accuracy:87.83   
+Epoch: [70][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4241   id:2.0947   tri:0.3294   Batch Time:0.51  Accuracy:87.13   
+Epoch: [70][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7157   id:1.6338   tri:0.0819   Batch Time:0.51  Accuracy:86.97   
+Epoch: [70][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4596   id:1.3817   tri:0.0780   Batch Time:0.51  Accuracy:86.92   
+Epoch: [70][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.6228   id:1.9473   tri:0.6755   Batch Time:0.51  Accuracy:86.92   
+Epoch: [70][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0914   id:1.9137   tri:0.1777   Batch Time:0.51  Accuracy:86.87   
+Original Observation:   Rank-1: 58.22% | Rank-5: 84.33% | Rank-10: 91.93%|                 Rank-20: 97.63%| mAP: 56.34%
+rank-1: 58.22%, mAP: 56.34%
+******************************************************************************
+==>2021-12-25_22-25-18
+==> Start Training...
+Epoch: [71][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3739   id:1.3610   tri:0.0129   Batch Time:0.51  Accuracy:86.27   
+Epoch: [71][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.0062   id:0.9617   tri:0.0445   Batch Time:0.51  Accuracy:86.40   
+Epoch: [71][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2632   id:1.8126   tri:0.4506   Batch Time:0.51  Accuracy:86.52   
+Epoch: [71][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7971   id:1.5833   tri:0.2137   Batch Time:0.51  Accuracy:86.75   
+Epoch: [71][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7203   id:1.4653   tri:0.2550   Batch Time:0.51  Accuracy:86.70   
+Epoch: [71][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5824   id:1.4957   tri:0.0867   Batch Time:0.51  Accuracy:86.76   
+Original Observation:   Rank-1: 58.63% | Rank-5: 85.65% | Rank-10: 92.81%|                 Rank-20: 97.37%| mAP: 57.19%
+rank-1: 58.63%, mAP: 57.19%
+******************************************************************************
+==>2021-12-25_22-31-27
+==> Start Training...
+Epoch: [72][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.7123   id:1.6420   tri:1.0703   Batch Time:0.51  Accuracy:86.43   
+Epoch: [72][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3226   id:2.1255   tri:0.1970   Batch Time:0.51  Accuracy:86.44   
+Epoch: [72][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3152   id:2.2520   tri:0.0632   Batch Time:0.51  Accuracy:86.54   
+Epoch: [72][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2772   id:1.9679   tri:0.3092   Batch Time:0.51  Accuracy:86.39   
+Epoch: [72][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.7859   id:1.5387   tri:0.2472   Batch Time:0.51  Accuracy:86.43   
+Epoch: [72][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6295   id:1.5732   tri:0.0563   Batch Time:0.51  Accuracy:86.50   
+Original Observation:   Rank-1: 59.55% | Rank-5: 86.49% | Rank-10: 93.34%|                 Rank-20: 97.74%| mAP: 57.92%
+rank-1: 59.55%, mAP: 57.92%
+******************************************************************************
+==>2021-12-25_22-37-35
+==> Start Training...
+Epoch: [73][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1720   id:2.1448   tri:0.0272   Batch Time:0.51  Accuracy:86.85   
+Epoch: [73][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3952   id:1.3669   tri:0.0283   Batch Time:0.51  Accuracy:87.15   
+Epoch: [73][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5234   id:1.5090   tri:0.0145   Batch Time:0.51  Accuracy:87.18   
+Epoch: [73][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.8082   id:2.4805   tri:0.3277   Batch Time:0.51  Accuracy:87.09   
+Epoch: [73][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8887   id:1.7043   tri:0.1843   Batch Time:0.51  Accuracy:86.91   
+Epoch: [73][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.2409   id:1.0956   tri:0.1453   Batch Time:0.51  Accuracy:86.89   
+Original Observation:   Rank-1: 59.09% | Rank-5: 85.82% | Rank-10: 93.40%|                 Rank-20: 97.91%| mAP: 57.42%
+rank-1: 59.09%, mAP: 57.42%
+******************************************************************************
+==>2021-12-25_22-43-43
+==> Start Training...
+Epoch: [74][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5181   id:2.2745   tri:0.2436   Batch Time:0.51  Accuracy:86.84   
+Epoch: [74][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4452   id:1.4300   tri:0.0151   Batch Time:0.51  Accuracy:86.77   
+Epoch: [74][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0478   id:1.7287   tri:0.3191   Batch Time:0.51  Accuracy:86.72   
+Epoch: [74][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.8292   id:2.4173   tri:0.4120   Batch Time:0.51  Accuracy:86.67   
+Epoch: [74][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8102   id:1.6266   tri:0.1836   Batch Time:0.51  Accuracy:86.67   
+Epoch: [74][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2310   id:1.9609   tri:0.2701   Batch Time:0.51  Accuracy:86.62   
+Original Observation:   Rank-1: 58.16% | Rank-5: 86.20% | Rank-10: 92.85%|                 Rank-20: 97.69%| mAP: 57.18%
+rank-1: 58.16%, mAP: 57.18%
+******************************************************************************
+==>2021-12-25_22-49-51
+==> Start Training...
+Epoch: [75][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9167   id:1.7911   tri:0.1256   Batch Time:0.51  Accuracy:86.31   
+Epoch: [75][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1452   id:1.8660   tri:0.2792   Batch Time:0.51  Accuracy:86.26   
+Epoch: [75][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.4372   id:2.9045   tri:0.5327   Batch Time:0.51  Accuracy:86.50   
+Epoch: [75][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5043   id:1.4448   tri:0.0594   Batch Time:0.51  Accuracy:86.65   
+Epoch: [75][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4645   id:2.2071   tri:0.2575   Batch Time:0.51  Accuracy:86.74   
+Epoch: [75][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.4832   id:1.4330   tri:0.0501   Batch Time:0.51  Accuracy:86.82   
+Original Observation:   Rank-1: 58.24% | Rank-5: 84.99% | Rank-10: 92.51%|                 Rank-20: 97.32%| mAP: 57.17%
+rank-1: 58.24%, mAP: 57.17%
+******************************************************************************
+==>2021-12-25_22-55-59
+==> Start Training...
+Epoch: [76][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.9819   id:1.6344   tri:0.3475   Batch Time:0.51  Accuracy:87.02   
+Epoch: [76][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8747   id:1.8075   tri:0.0672   Batch Time:0.51  Accuracy:86.59   
+Epoch: [76][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2615   id:1.6708   tri:0.5907   Batch Time:0.51  Accuracy:86.62   
+Epoch: [76][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.0194   id:2.1583   tri:0.8612   Batch Time:0.51  Accuracy:86.70   
+Epoch: [76][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4028   id:2.0722   tri:0.3307   Batch Time:0.51  Accuracy:86.63   
+Epoch: [76][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8649   id:1.4637   tri:0.4011   Batch Time:0.51  Accuracy:86.76   
+Original Observation:   Rank-1: 58.89% | Rank-5: 85.65% | Rank-10: 92.77%|                 Rank-20: 97.49%| mAP: 57.26%
+rank-1: 58.89%, mAP: 57.26%
+******************************************************************************
+==>2021-12-25_23-02-08
+==> Start Training...
+Epoch: [77][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1178   id:1.9013   tri:0.2165   Batch Time:0.51  Accuracy:87.14   
+Epoch: [77][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.1821   id:1.1585   tri:0.0236   Batch Time:0.51  Accuracy:87.21   
+Epoch: [77][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6548   id:1.4731   tri:0.1817   Batch Time:0.51  Accuracy:87.29   
+Epoch: [77][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1944   id:1.7582   tri:0.4362   Batch Time:0.51  Accuracy:87.13   
+Epoch: [77][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3007   id:1.9254   tri:0.3753   Batch Time:0.51  Accuracy:87.05   
+Epoch: [77][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.5061   id:2.0244   tri:0.4816   Batch Time:0.51  Accuracy:86.98   
+Original Observation:   Rank-1: 58.64% | Rank-5: 84.76% | Rank-10: 91.68%|                 Rank-20: 96.86%| mAP: 56.82%
+rank-1: 58.64%, mAP: 56.82%
+******************************************************************************
+==>2021-12-25_23-08-16
+==> Start Training...
+Epoch: [78][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.3281   id:1.2188   tri:0.1092   Batch Time:0.51  Accuracy:86.41   
+Epoch: [78][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.8952   id:1.6868   tri:0.2084   Batch Time:0.51  Accuracy:86.25   
+Epoch: [78][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3232   id:2.0534   tri:0.2698   Batch Time:0.51  Accuracy:86.44   
+Epoch: [78][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0714   id:1.9874   tri:0.0839   Batch Time:0.51  Accuracy:86.40   
+Epoch: [78][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5115   id:1.5040   tri:0.0075   Batch Time:0.51  Accuracy:86.68   
+Epoch: [78][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.0406   id:1.7014   tri:0.3392   Batch Time:0.51  Accuracy:86.66   
+Original Observation:   Rank-1: 59.02% | Rank-5: 85.46% | Rank-10: 92.75%|                 Rank-20: 97.74%| mAP: 57.16%
+rank-1: 59.02%, mAP: 57.16%
+******************************************************************************
+==>2021-12-25_23-14-24
+==> Start Training...
+Epoch: [79][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.3533   id:2.1254   tri:0.2279   Batch Time:0.51  Accuracy:86.10   
+Epoch: [79][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6228   id:1.5919   tri:0.0309   Batch Time:0.51  Accuracy:86.37   
+Epoch: [79][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.5932   id:1.4769   tri:0.1163   Batch Time:0.51  Accuracy:86.31   
+Epoch: [79][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.7768   id:2.1512   tri:0.6256   Batch Time:0.51  Accuracy:86.38   
+Epoch: [79][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.4056   id:1.8364   tri:0.5691   Batch Time:0.51  Accuracy:86.31   
+Epoch: [79][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.5536   id:2.7414   tri:0.8122   Batch Time:0.51  Accuracy:86.39   
+Original Observation:   Rank-1: 59.43% | Rank-5: 86.68% | Rank-10: 93.43%|                 Rank-20: 98.09%| mAP: 57.76%
+rank-1: 59.43%, mAP: 57.76%
+******************************************************************************
+==>2021-12-25_23-20-32
+==> Start Training...
+Epoch: [80][100/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2559   id:1.9908   tri:0.2651   Batch Time:0.51  Accuracy:86.29   
+Epoch: [80][200/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:1.6825   id:1.5718   tri:0.1108   Batch Time:0.51  Accuracy:86.86   
+Epoch: [80][300/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:3.5999   id:2.3757   tri:1.2242   Batch Time:0.51  Accuracy:87.09   
+Epoch: [80][400/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.9115   id:2.7271   tri:0.1844   Batch Time:0.51  Accuracy:86.96   
+Epoch: [80][500/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.1042   id:1.7801   tri:0.3241   Batch Time:0.51  Accuracy:87.15   
+Epoch: [80][600/696]   Convolution LR: 0.0000000   IB & Classifier LR: 0.0000000    Loss:2.2442   id:2.0786   tri:0.1657   Batch Time:0.51  Accuracy:87.14   
+Original Observation:   Rank-1: 59.63% | Rank-5: 85.72% | Rank-10: 93.05%|                 Rank-20: 97.44%| mAP: 57.79%
+rank-1: 59.63%, mAP: 57.79%
+******************************************************************************
+=> Save best parameters...
+For SYSU-MM01 all search, the testing result is:
+Best: rank-1: 59.63%, mAP: 57.79%,         Best epoch: 80(according to Rank-1)
